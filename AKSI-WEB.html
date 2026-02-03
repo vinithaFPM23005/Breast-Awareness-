@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKSI Campaign | Empowering Change</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e293b;
+            --text-light: #f8fafc;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--secondary-color);
+        }
+        header {
+            background: var(--secondary-color);
+            color: var(--text-light);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        .cta-button {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .container { padding: 4rem 10%; text-align: center; }
+        footer { background: #eee; padding: 2rem; text-align: center; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><strong>AKSI</strong></div>
+        <nav>
+            <a href="#about" style="color: white; margin-left: 20px; text-decoration: none;">About</a>
+            <a href="#contact" style="color: white; margin-left: 20px; text-decoration: none;">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to the AKSI Campaign</h1>
+        <p>Driving innovation and community impact through dedicated action.</p>
+        <a href="#join" class="cta-button">Join the Movement</a>
+    </section>
+
+    <main class="container" id="about">
+        <h2>About Our Mission</h2>
+        <p>AKSI is dedicated to transforming vision into reality. We focus on community engagement, sustainable development, and empowering local voices to lead the way into the future.</p>
+        <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ddd;">
+        <div style="display: flex; gap: 20px; justify-content: space-around; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 250px;">
+                <h3>Innovation</h3>
+                <p>Utilizing modern tech like LlamaParse to organize and distribute campaign intelligence.</p>
+            </div>
+            <div style="flex: 1; min-width: 250px;">
+                <h3>Integrity</h3>
+                <p>Transparent reporting and community-first decision making.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AKSI Campaign. Built for the community.</p>
+    </footer>
+
+</body>
+</html>
