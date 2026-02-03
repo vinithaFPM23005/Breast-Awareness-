@@ -3,62 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AKSI | The Detection That Saves Lives</title>
+    <title>AKSI | Breast Cancer Awareness Campaign</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --aksi-pink: #e91e63; --aksi-dark: #1a1a1a; --aksi-light: #fdf2f5; }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; line-height: 1.6; }
-        nav { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
-        .logo { color: var(--aksi-pink); font-weight: bold; font-size: 1.5rem; }
-        .hero { background: linear-gradient(rgba(233, 30, 99, 0.8), rgba(233, 30, 99, 0.8)), url('https://images.unsplash.com/photo-1579152276502-545a248a9931?auto=format&fit=crop&w=1600&q=80');
-                background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 20px; }
-        .container { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-        .card { background: var(--aksi-light); padding: 30px; border-radius: 15px; text-align: center; transition: 0.3s; }
-        .card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .card i { font-size: 2.5rem; color: var(--aksi-pink); margin-bottom: 15px; }
-        .video-section { background: #f9f9f9; padding: 60px 0; }
-        .video-card { background: white; padding: 15px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); max-width: 345px; margin: 0 auto; }
-        video { width: 100%; border-radius: 10px; }
-        footer { background: var(--aksi-dark); color: white; text-align: center; padding: 40px 20px; }
-        .tech-badge { background: #333; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; }
+        :root {
+            --baby-pink: #fce4ec; 
+            --deep-pink: #e91e63;
+            --aksi-dark: #2d3436;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: var(--baby-pink); color: var(--aksi-dark); line-height: 1.6; }
+        header { background: white; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .logo-container { display: flex; align-items: center; gap: 20px; }
+        .logo-img { height: 60px; object-fit: contain; }
+        .hero { text-align: center; padding: 80px 20px; background: linear-gradient(180deg, #ffffff 0%, var(--baby-pink) 100%); }
+        .hero h1 { color: var(--deep-pink); font-size: 2.5rem; margin-bottom: 10px; }
+        .campaign-tag { font-weight: bold; text-transform: uppercase; letter-spacing: 2px; color: #555; }
+        .poster-info { max-width: 1000px; margin: 40px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 0 20px; }
+        .info-card { background: white; padding: 30px; border-radius: 20px; border-left: 5px solid var(--deep-pink); box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .info-card h3 { color: var(--deep-pink); margin-top: 0; }
+        .video-section { padding: 60px 20px; text-align: center; }
+        .video-wrapper { background: white; padding: 20px; border-radius: 30px; display: inline-block; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        video { width: 100%; max-width: 320px; border-radius: 15px; }
+        footer { background: var(--aksi-dark); color: white; text-align: center; padding: 40px 20px; margin-top: 60px; }
+        .highlight { color: var(--deep-pink); font-weight: bold; }
     </style>
 </head>
 <body>
-    <nav><div class="logo">AKSI | पहचान जो जीवन बचाये</div></nav>
+    <header>
+        <div class="logo-container">
+            <img src="image.png" alt="FORE Logo" class="logo-img">
+            <div style="border-left: 2px solid #ddd; padding-left: 20px;">
+                <h2 style="margin:0; color:var(--deep-pink);">AKSI</h2>
+                <small>The Detection That Saves Lives</small>
+            </div>
+        </div>
+        <div class="campaign-tag">World Cancer Day: 4th Feb 2026</div>
+    </header>
     <section class="hero">
-        <h1>The Detection That Saves Lives</h1>
-        <p>AI-enabled Knowledge Systems for India. Promoting early detection of breast cancer through education and community support.</p>
+        <h1>Breast Cancer Awareness & Self-Examination</h1>
+        <p>Early detection is the first step toward a cure. <span class="highlight">पहचान जो जीवन बचाऐ</span></p>
     </section>
-    <div class="container">
-        <h2 style="text-align: center; color: var(--aksi-pink); margin-bottom: 40px;">Campaign Intelligence</h2>
-        <div class="grid">
-            <div class="card">
-                <i class="fas fa-brain"></i>
-                <h3>AI Powered</h3>
-                <p>Utilizing modern tech like <span class="tech-badge">LlamaParse</span> to organize and distribute campaign intelligence effectively across all platforms.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-microscope"></i>
-                <h3>Screening</h3>
-                <p>Detailed guides for Self-Examination and identifying early symptoms.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-users"></i>
-                <h3>Action</h3>
-                <p>Directly connecting awareness to clinical action via local ASHA workers.</p>
-            </div>
+    <div class="poster-info">
+        <div class="info-card">
+            <h3><i class="fas fa-ribbon"></i> Key Facts</h3>
+            <ul>
+                <li>Breast cancer occurs when abnormal cells grow in the breast[cite: 5].</li>
+                <li>Monthly self-examination helps early identification[cite: 7].</li>
+                <li>Confidential and supportive care is available[cite: 10].</li>
+            </ul>
+        </div>
+        <div class="info-card">
+            <h3><i class="fas fa-search-plus"></i> What to Look For</h3>
+            <p>During your monthly check, look for[cite: 8]:</p>
+            <ul>
+                <li>Lumps or thickening in the breast[cite: 8].</li>
+                <li>Changes in size or shape[cite: 8].</li>
+                <li>Unusual pain or skin changes[cite: 8].</li>
+            </ul>
         </div>
     </div>
     <section class="video-section">
-        <h2 style="text-align: center; color: var(--aksi-pink);">SBE Tutorial</h2>
-        <div class="video-card">
-            <video controls><source src="AKSI_Guide.webm" type="video/webm"></video>
+        <h2 style="color:var(--deep-pink); margin-bottom:30px;">Visual Awareness Guide</h2>
+        <div class="video-wrapper">
+            <video controls>
+                <source src="AKSI_Guide.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
         </div>
+        <p style="margin-top:20px;">Free screening available | Make a step towards prevention.</p>
     </section>
     <footer>
-        <p><strong>AKSI Campaign</strong> | FORE School of Management, New Delhi</p>
-        <p>World Cancer Day 2026 Initiative</p>
+        <p><strong>AKSI - FORE School of Management, New Delhi</strong> [cite: 12]</p>
+        <p>An awareness initiative in support of public health & community well-being [cite: 12]</p>
     </footer>
 </body>
 </html>
