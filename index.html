@@ -15,17 +15,18 @@
         header { background: white; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .logo-container { display: flex; align-items: center; gap: 20px; }
         .logo-img { height: 60px; object-fit: contain; }
-        .hero { text-align: center; padding: 80px 20px; background: linear-gradient(180deg, #ffffff 0%, var(--baby-pink) 100%); }
+        .hero { text-align: center; padding: 60px 20px; background: linear-gradient(180deg, #ffffff 0%, var(--baby-pink) 100%); }
         .hero h1 { color: var(--deep-pink); font-size: 2.5rem; margin-bottom: 10px; }
-        .campaign-tag { font-weight: bold; text-transform: uppercase; letter-spacing: 2px; color: #555; }
-        .poster-info { max-width: 1000px; margin: 40px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 0 20px; }
-        .info-card { background: white; padding: 30px; border-radius: 20px; border-left: 5px solid var(--deep-pink); box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .info-card h3 { color: var(--deep-pink); margin-top: 0; }
-        .video-section { padding: 60px 20px; text-align: center; }
-        .video-wrapper { background: white; padding: 20px; border-radius: 30px; display: inline-block; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        video { width: 100%; max-width: 320px; border-radius: 15px; }
+        .action-container { max-width: 1000px; margin: 40px auto; padding: 0 20px; text-align: center; }
+        .action-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
+        .action-card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .btn { display: inline-block; padding: 15px 30px; background: var(--deep-pink); color: white; text-decoration: none; border-radius: 30px; font-weight: bold; transition: 0.3s; margin-top: 15px; border: none; cursor: pointer; }
+        .btn:hover { background: #c2185b; transform: translateY(-2px); }
+        .btn-outline { background: white; color: var(--deep-pink); border: 2px solid var(--deep-pink); }
+        .video-section { padding: 40px 20px; text-align: center; background: white; margin-top: 40px; }
+        .video-wrapper { display: inline-block; padding: 10px; border: 3px solid var(--baby-pink); border-radius: 20px; }
+        video { width: 100%; max-width: 320px; border-radius: 10px; }
         footer { background: var(--aksi-dark); color: white; text-align: center; padding: 40px 20px; margin-top: 60px; }
-        .highlight { color: var(--deep-pink); font-weight: bold; }
     </style>
 </head>
 <body>
@@ -37,44 +38,51 @@
                 <small>The Detection That Saves Lives</small>
             </div>
         </div>
-        <div class="campaign-tag">World Cancer Day: 4th Feb 2026</div>
-    </header>
-    <section class="hero">
-        <h1>Breast Cancer Awareness & Self-Examination</h1>
-        <p>Early detection is the first step toward a cure. <span class="highlight">पहचान जो जीवन बचाऐ</span></p>
-    </section>
-    <div class="poster-info">
-        <div class="info-card">
-            <h3><i class="fas fa-ribbon"></i> Key Facts</h3>
-            <ul>
-                <li>Breast cancer occurs when abnormal cells grow in the breast[cite: 5].</li>
-                <li>Monthly self-examination helps early identification[cite: 7].</li>
-                <li>Confidential and supportive care is available[cite: 10].</li>
-            </ul>
+        <div style="text-align:right">
+            <div style="font-weight:bold; color:var(--deep-pink)">WORLD CANCER DAY</div>
+            <small>4th February, 2026</small>
         </div>
-        <div class="info-card">
-            <h3><i class="fas fa-search-plus"></i> What to Look For</h3>
-            <p>During your monthly check, look for[cite: 8]:</p>
-            <ul>
-                <li>Lumps or thickening in the breast[cite: 8].</li>
-                <li>Changes in size or shape[cite: 8].</li>
-                <li>Unusual pain or skin changes[cite: 8].</li>
-            </ul>
+    </header>
+
+    <section class="hero">
+        <h1>Take Action. Save Lives.</h1>
+        <p>An awareness initiative in support of public health & community well-being.</p>
+    </section>
+
+    <div class="action-container">
+        <h2 style="color:var(--deep-pink)">Community Action Hub</h2>
+        <p>Step towards prevention with confidential and supportive care.</p>
+        
+        <div class="action-grid">
+            <div class="action-card">
+                <i class="fas fa-hospital-user fa-3x" style="color:var(--deep-pink); margin-bottom: 10px;"></i>
+                <h3>Free Screening</h3>
+                <p>Access confidential screenings at your nearest AKSI-partnered health center.</p>
+                <a href="#" class="btn">View Locations</a>
+            </div>
+            
+            <div class="action-card">
+                <i class="fas fa-hands-helping fa-3x" style="color:var(--deep-pink); margin-bottom: 10px;"></i>
+                <h3>ASHA Support</h3>
+                <p>Connect with a local ASHA worker for simple & safe examination guidance.</p>
+                <a href="tel:+910000000000" class="btn btn-outline">Find Local Worker</a>
+            </div>
         </div>
     </div>
+
     <section class="video-section">
-        <h2 style="color:var(--deep-pink); margin-bottom:30px;">Visual Awareness Guide</h2>
+        <h2 style="color:var(--deep-pink)">Self-Examination Tutorial</h2>
         <div class="video-wrapper">
             <video controls>
                 <source src="AKSI_Guide.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <p style="margin-top:20px;">Free screening available | Make a step towards prevention.</p>
     </section>
+
     <footer>
-        <p><strong>AKSI - FORE School of Management, New Delhi</strong> [cite: 12]</p>
-        <p>An awareness initiative in support of public health & community well-being [cite: 12]</p>
+        <p><strong>AKSI - FORE School of Management</strong></p>
+        <p>Together, we can save lives through prevention and promotion of awareness.</p>
     </footer>
 </body>
 </html>
