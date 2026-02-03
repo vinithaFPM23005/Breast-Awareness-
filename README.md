@@ -1,7 +1,15 @@
 AKSI: The Detection That Saves Lives
 World Cancer Day 2026 - Breast Cancer Awareness Campaign
 
-# Breast-Awareness- AI enabled Knowledge Systems for India: “The detection that saves lives”. "पहचान जो जीवन बचाए " which encompasses 1. Disease Awareness (The "What")2. Screening Knowledge &amp; Steps (The "How")3. Practice &amp; Behavior (The "Self"4. Facility Proximity Awareness (The "Where5. Action Orientation (The "Trigger") along with SBE Awareness Guide,App &amp; Tutorials
+# Breast-Awareness- AI enabled Knowledge Systems for India: “The detection that saves lives”. "पहचान जो जीवन बचाए " 
+
+AKSI encompasses 
+1. Disease Awareness (The "What")
+2. Screening Knowledge &amp; Steps (The "How")
+3. Practice &amp; Behavior (The "Self")
+4. Facility Proximity Awareness (The "Where)
+5. Action Orientation (The "Trigger") along with SBE Awareness Guide,App & Tutorials
+   Feedback to assess the same
 
 # Campaign Overview
 AKSI (पहचान जो जीवन बचाये - The Detection That Saves Lives) is a comprehensive breast cancer awareness initiative launched by FORE School of Management, New Delhi, for World Cancer Day 2026.
